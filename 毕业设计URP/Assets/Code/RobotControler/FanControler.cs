@@ -8,7 +8,7 @@ public class FanControler : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Transform[] lighbar_rings = new Transform[10];
+    public LightControler[] lighbar_rings = new LightControler[10];
     public Transform lightbar_target;
     public Transform lightbar_bound;
     public Transform lightbar_waterlam;
@@ -29,7 +29,7 @@ public class FanControler : MonoBehaviour
 
                 int.TryParse(Regex.Match(tempchild.name,@"[0-9]+").Value, out int index);
 
-                lighbar_rings[index-1] = tempchild;
+                lighbar_rings[index-1] = tempchild.GetComponent<LightControler>();
                 
                 Debug.Log(index);
             }

@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="" />
+    <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/Light_test.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/Light_test.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +35,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/82/7bacf48f/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/ba/2faf27cf/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/d5/90fa8cfe/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/CGIncludes/UnityCG.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/ui/UIController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,7 +65,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../build speace/test.x86_64" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../build speace/test.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../build speace" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -114,6 +132,8 @@
       <workItem from="1681203613646" duration="9951000" />
       <workItem from="1681370733190" duration="1086000" />
       <workItem from="1681385693901" duration="603000" />
+      <workItem from="1681389339397" duration="605000" />
+      <workItem from="1681392115989" duration="3763000" />
     </task>
     <servers />
   </component>
