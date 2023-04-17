@@ -2,21 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/Light_test.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/Light_test.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/Red_light_bar.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/Red_light_bar.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/battle_field.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/battle_field.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_Easy_light_blue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_Easy_light_blue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/houese.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/houese.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/chapter-simple.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/chapter-simple.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/easy_light.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/easy_light.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/sphere.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/sphere.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/wall.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/material_self/wall.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +39,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1060fe86c9b140feab1d3cb928c249f17400/0f/81517934/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/71/99362ecd/Boolean.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/ab/09ec9ed4/Single.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ac3db53eb7ff4b60a77b78883bc276b57a00/ea/b29084d5/TextMesh.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/33/2ebe6e37/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/5b/3843556c/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/73/7e48cbde/Time.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/82/7bacf48f/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/ba/2faf27cf/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/d5/90fa8cfe/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b059f953968e687489b338b57618cc8dae8079c3435fa65cde9eeb3086bcd1c/System.Text.RegularExpressions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/CGIncludes/UnityCG.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/ui/UIController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,6 +59,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/iiap/桌面/unity_project/Learn_shader/Assets&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -134,6 +142,9 @@
       <workItem from="1681385693901" duration="603000" />
       <workItem from="1681389339397" duration="605000" />
       <workItem from="1681392115989" duration="3763000" />
+      <workItem from="1681458545934" duration="1135000" />
+      <workItem from="1681460754157" duration="12685000" />
+      <workItem from="1681558622094" duration="1114000" />
     </task>
     <servers />
   </component>

@@ -1,21 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class BuffControler : MonoBehaviour
 {
+
     // Start is called before the first frame update
     public bool buff_rotation = false;
     public float rotationbalace = 1.0f;
     //buff rotation
     private Transform buff_base;
+    public FanControler[] bufffans;
     private float time_counter=0;
 
 
     void Start()
     {
+        bufffans = new FanControler[5];
+       
         //find object
         for (int i = 0; i < transform.childCount; i++)
         {    
@@ -26,13 +32,7 @@ public class BuffControler : MonoBehaviour
                 buff_base = transform.GetChild(i);
             }
 
-            if (tempchild.name.Substring(0,4)=="bugg")
-            {
-                // fan_ring_lights.Add(tempchild);
-                Debug.Log("???????");
-            }
 
-            
         }
      
         
@@ -64,6 +64,8 @@ public class BuffControler : MonoBehaviour
         this.time_counter = 0.0f;
         buff_rotation=false;
     }
+    
+    
 
     private void buff_rotate()
     {
