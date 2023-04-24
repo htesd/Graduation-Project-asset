@@ -2,35 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RoboControler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RoboControler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_actived.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_actived.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/GameManageer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/GameManageer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/LightControler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/LightControler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/cmaramer/BasicCharamerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/cmaramer/BasicCharamerControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/Blue_light-bar.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/Red_light_bar.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/Red_light_bar.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/battle_field.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/battle_field.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_Easy_light_blue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_Easy_light_blue.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_red.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/buff_red.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/houese.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/houese.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/chapter-simple.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/chapter-simple.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/easy_light.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/shader/easy_light.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/sphere.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/sphere.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/wall.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/material_self/wall.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,28 +31,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a755ffeed2c46fabb376eed847e63a3133000/3d/8bdb9b38/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a755ffeed2c46fabb376eed847e63a3133000/68/3999e884/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a755ffeed2c46fabb376eed847e63a3133000/a4/4c393b63/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a755ffeed2c46fabb376eed847e63a3133000/be/b509b46a/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/82/7bacf48f/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/ba/2faf27cf/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d303c2bf72cd4cec95665b89c457d265d2b8ef3ed6da17cd4f85587c2f9de7/System.Linq.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b059f953968e687489b338b57618cc8dae8079c3435fa65cde9eeb3086bcd1c/System.Text.RegularExpressions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/CGIncludes/UnityCG.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/ui/UIController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2N3AuFgeILnmMdoHsbeA9YZ6ZVj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/iiap/桌面/unity_project/Learn_shader/Assets&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -145,15 +148,32 @@
       <workItem from="1681458545934" duration="1135000" />
       <workItem from="1681460754157" duration="12685000" />
       <workItem from="1681558622094" duration="1114000" />
+      <workItem from="1681955274332" duration="6929000" />
+      <workItem from="1681970528897" duration="11071000" />
+      <workItem from="1681993226608" duration="2471000" />
+      <workItem from="1682305925141" duration="2435000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

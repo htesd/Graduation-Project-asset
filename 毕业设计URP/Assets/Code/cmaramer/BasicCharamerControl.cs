@@ -12,35 +12,35 @@ public class BasicCharamerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.lockState = CursorLockMode.Locked;
+        // Cursor.lockState = CursorLockMode.Confined;
+        // Cursor.lockState = CursorLockMode.Locked;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Input.GetAxis("MouseX")获取鼠标移动的X轴的距离
-        xRotation -= Input.GetAxis("Mouse X")*rotation_sensitivity ;
-        yRotation += Input.GetAxis("Mouse Y") * rotation_sensitivity;
-        //欧拉角转化为四元数
-        Quaternion rotation = Quaternion.Euler(-yRotation, -xRotation, 0);
-        transform.rotation = rotation;
-        
-
-        transform.Translate(Vector3.forward * Input.GetAxis("Vertical")*move_speed*Time.deltaTime  );
-        transform.Translate(Vector3.right * Input.GetAxis("Horizontal")*move_speed*Time.deltaTime  );
-
-
-        if (Input.GetKey("e"))
-        {
-         transform.Translate(Vector3.up*move_speed*Time.deltaTime);
-        }
-        if (Input.GetKey("q"))
-        {
-            transform.Translate(Vector3.down*move_speed*Time.deltaTime);
-        }
-        
+        // //Input.GetAxis("MouseX")获取鼠标移动的X轴的距离
+        // xRotation -= Input.GetAxis("Mouse X")*rotation_sensitivity ;
+        // yRotation += Input.GetAxis("Mouse Y") * rotation_sensitivity;
+        // //欧拉角转化为四元数
+        // Quaternion rotation = Quaternion.Euler(-yRotation, -xRotation, 0);
+        // transform.rotation = rotation;
+        //
+        //
+        // transform.Translate(Vector3.forward * Input.GetAxis("Vertical")*move_speed*Time.deltaTime  );
+        // transform.Translate(Vector3.right * Input.GetAxis("Horizontal")*move_speed*Time.deltaTime  );
+        //
+        //
+        // if (Input.GetKey("e"))
+        // {
+        //  transform.Translate(Vector3.up*move_speed*Time.deltaTime);
+        // }
+        // if (Input.GetKey("q"))
+        // {
+        //     transform.Translate(Vector3.down*move_speed*Time.deltaTime);
+        // }
+        //
 
         
 

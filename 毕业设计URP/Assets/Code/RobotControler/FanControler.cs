@@ -14,9 +14,10 @@ public class FanControler : MonoBehaviour
     public Transform lightbar_bound;
     public Transform lightbar_waterlam;
     public Transform water_light;
+    public bool is_active = false;
 
     public Material[] materials;
-
+    
 
     void Start()
     {
@@ -28,9 +29,6 @@ public class FanControler : MonoBehaviour
 
             if (Regex.Match(tempchild.name, @"[a-z]{4}").Value == "bugg")
             {
-                // Debug.Log("haha!");
-
-                // Debug.Log(Regex.Match(tempchild.name,@"[0-9]+"));
 
                 int.TryParse(Regex.Match(tempchild.name, @"[0-9]+").Value, out int index);
 
@@ -42,6 +40,7 @@ public class FanControler : MonoBehaviour
             if (Regex.Match(tempchild.name, @"waterlamp").Success)
             {
                 lightbar_waterlam = tempchild.GetComponent<Transform>();
+               
                 continue;
             }
 
@@ -63,19 +62,14 @@ public class FanControler : MonoBehaviour
             }
 
         }
-
-        // turn_lightring_onbynum(Random.Range(0, 10));
-
+        
+        
+        turn_lightbound_off();
+       
+       
 
     }
 
-    // Update is called once per frame
-        void Update()
-        {
-            
-            
-                
-        }
 
 
         public bool turn_lightring_onbynum(int num)
@@ -100,68 +94,84 @@ public class FanControler : MonoBehaviour
             else
             {
                 lighbar_rings[num].gameObject.GetComponent<Renderer>().material = materials[1];
+                this.is_active = true;
                 return true;
             }
 
-            return false;
+        
         }
         
-        public bool turn_lightbound_on()
-        {
-            for (int i = 0; i < lightbar_bound.gameObject.GetComponent<Renderer>().materials.Length; i++)
+        public void turn_lightbound_on()
+        {   
+            // Debug.Log("change bound on ");
+
+            Material[] Mat;
+            Mat = new Material[4];
+            for (int i = 0; i < 4;  i++)
             {
-                lightbar_bound.gameObject.GetComponent<Renderer>().materials[i] = this.materials[0];
+                Mat[i] = this.materials[0];
             }
-                return true;
+            
+            lightbar_bound.gameObject.GetComponent<Renderer>().materials = Mat;
+            
+              
         }
             
         
-        public bool turn_lightbound_off()
-        {
-            for (int i = 0; i < lightbar_bound.gameObject.GetComponent<Renderer>().materials.Length; i++)
+        public void turn_lightbound_off()
+        {   
+            
+            // Debug.Log("change bound off ");
+
+            Material[] Mat;
+            Mat = new Material[4];
+            for (int i = 0; i < 4;  i++)
             {
-                lightbar_bound.gameObject.GetComponent<Renderer>().materials[i] = this.materials[1];
+                Mat[i] = this.materials[1];
             }
-            return true;
+            
+            lightbar_bound.gameObject.GetComponent<Renderer>().materials = Mat;
+
+            
         }
         
-        public bool turn_lighttarget_on()
+        public void turn_lighttarget_on()
         {
             lightbar_target.gameObject.GetComponent<Renderer>().material = materials[0];
-            return true;
+            
         }
             
         
-        public bool turn_lighttarget_off()
+        public void turn_lighttarget_off()
         {
             lightbar_target.gameObject.GetComponent<Renderer>().material = materials[1];
-            return true;
+          
         }
         
-        public bool turn_lightwatter_on()
+        public void turn_lightwatterlam_on()
         {
             lightbar_waterlam.gameObject.GetComponent<Renderer>().material = materials[0];
-            return true;
+           
         }
             
         
-        public bool turn_lightwatter_off()
+        public void turn_lightwatterlam_off()
         {
             lightbar_waterlam.gameObject.GetComponent<Renderer>().material = materials[1];
-            return true;
+           
         }
         
-        public bool water_light_on()
+        public void turn_water_light_on()
         {
             water_light.GetComponent<Renderer>().material = materials[0];
-            return true;
+            
         }
             
         
-        public bool water_light_off()
+        public void turn_water_light_off()
         {
             water_light.GetComponent<Renderer>().material = materials[1];
-            return true;
+           
         }
         
         

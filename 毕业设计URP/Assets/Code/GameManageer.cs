@@ -15,4 +15,9 @@ public class GameManageer : MonoBehaviour
     {
         
     }
+
+    public void send_test()
+    {
+        Debug.Log("wtf???");
+    }
 }
