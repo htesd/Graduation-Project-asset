@@ -175,6 +175,13 @@ public class FanControler : MonoBehaviour
         }
         
         
+        //整合状态
+        public void enter_target_mode()
+        {
+            
+        }
+        
+        
         
         
         
