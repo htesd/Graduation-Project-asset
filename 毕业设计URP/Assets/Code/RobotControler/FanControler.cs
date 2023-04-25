@@ -11,7 +11,8 @@ public class FanControler : MonoBehaviour
 
     public Transform[] lighbar_rings = new Transform[10];
     public Transform lightbar_target;
-    public Transform lightbar_bound;
+    public Transform lightbar_bound_up;
+    public Transform lightbar_bound_down;
     public Transform lightbar_waterlam;
     public Transform water_light;
     public bool is_active = false;
@@ -44,9 +45,14 @@ public class FanControler : MonoBehaviour
                 continue;
             }
 
-            if (Regex.Match(tempchild.name, @"bound").Success)
+            if (Regex.Match(tempchild.name, @"bound_up").Success)
             {
-                lightbar_bound = tempchild.GetComponent<Transform>();
+                lightbar_bound_up = tempchild.GetComponent<Transform>();
+                continue;
+            }
+            if (Regex.Match(tempchild.name, @"bound_down").Success)
+            {
+                lightbar_bound_down = tempchild.GetComponent<Transform>();
                 continue;
             }
             if (Regex.Match(tempchild.name, @"target").Success)
@@ -64,14 +70,15 @@ public class FanControler : MonoBehaviour
         }
         
         
-        turn_lightbound_off();
-       
-       
+        turn_lightbound_up_on();
+        
+        this.lightbar_target.gameObject.SetActive(false);
+
 
     }
 
 
-
+        
         public bool turn_lightring_onbynum(int num)
         {
             if (num > this.lighbar_rings.Length)
@@ -101,7 +108,7 @@ public class FanControler : MonoBehaviour
         
         }
         
-        public void turn_lightbound_on()
+        public void turn_lightbound_up_on()
         {   
             // Debug.Log("change bound on ");
 
@@ -112,13 +119,13 @@ public class FanControler : MonoBehaviour
                 Mat[i] = this.materials[0];
             }
             
-            lightbar_bound.gameObject.GetComponent<Renderer>().materials = Mat;
+            lightbar_bound_up.gameObject.GetComponent<Renderer>().materials = Mat;
             
               
         }
             
         
-        public void turn_lightbound_off()
+        public void turn_lightbound_up_off()
         {   
             
             // Debug.Log("change bound off ");
@@ -130,11 +137,43 @@ public class FanControler : MonoBehaviour
                 Mat[i] = this.materials[1];
             }
             
-            lightbar_bound.gameObject.GetComponent<Renderer>().materials = Mat;
+            lightbar_bound_up.gameObject.GetComponent<Renderer>().materials = Mat;
 
             
         }
+        public void turn_lightbound_down_on()
+        {   
+            // Debug.Log("change bound on ");
+
+            Material[] Mat;
+            Mat = new Material[4];
+            for (int i = 0; i < 4;  i++)
+            {
+                Mat[i] = this.materials[0];
+            }
+            
+            lightbar_bound_up.gameObject.GetComponent<Renderer>().materials = Mat;
+            
+              
+        }
+            
         
+        public void turn_lightbound_down_up_off()
+        {   
+            
+            // Debug.Log("change bound off ");
+
+            Material[] Mat;
+            Mat = new Material[4];
+            for (int i = 0; i < 4;  i++)
+            {
+                Mat[i] = this.materials[1];
+            }
+            
+            lightbar_bound_up.gameObject.GetComponent<Renderer>().materials = Mat;
+
+            
+        }
         public void turn_lighttarget_on()
         {
             lightbar_target.gameObject.GetComponent<Renderer>().material = materials[0];
@@ -172,6 +211,13 @@ public class FanControler : MonoBehaviour
         {
             water_light.GetComponent<Renderer>().material = materials[1];
            
+        }
+        
+        
+        //整合状态
+        public void enter_target_mode()
+        {
+            
         }
         
         
