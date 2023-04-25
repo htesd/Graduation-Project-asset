@@ -1,29 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RoboControler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RoboControler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_actived.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_actived.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl950.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl950.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl952.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl952.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl95b.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl95b.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl960.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl960.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl967.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl967.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl968.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl968.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl969.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl969.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl96a.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl96a.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl96b.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl96b.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl970.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl970.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl971.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl971.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl972.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl972.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl973.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl973.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl974.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl974.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl975.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl975.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl976.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl976.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl977.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl977.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl978.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl978.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl979.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl979.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl97a.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl97a.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl97b.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl97b.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl980.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl980.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl981.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl981.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl982.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl982.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl983.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl983.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl985.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl985.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl988.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl988.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl989.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl989.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl98a.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl98a.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl98b.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl98b.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl990.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl990.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl991.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl991.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl992.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl992.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl993.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl993.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl994.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl994.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl995.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl995.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl996.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl996.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl997.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl997.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl998.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl998.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl999.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl999.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl99a.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl99a.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a0.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a0.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a2.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a2.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a4.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a4.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a5.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a5.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a6.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a6.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a7.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a7.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a8.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a8.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a9.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9a9.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9aa.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9aa.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9ab.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9ab.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b0.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b0.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b1.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b1.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b2.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b2.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b3.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b3.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b4.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b4.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b5.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b5.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b6.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b6.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b8.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9b8.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9ba.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtl9ba.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla00.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla00.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla01.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla01.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla02.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla02.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla03.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla03.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla04.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla04.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla05.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla05.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla06.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla06.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla07.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla07.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla08.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla08.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla09.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla09.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla0a.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla0a.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla0b.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla0b.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla10.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla10.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla11.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla11.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla12.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla12.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla14.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla14.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla17.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla17.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla18.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla18.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla19.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla19.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla1a.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla1a.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla1b.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla1b.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla20.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla20.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla21.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla21.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla22.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla22.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla23.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla23.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla24.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla24.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla25.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla25.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla26.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla26.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla27.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla27.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla28.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla28.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla29.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla29.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla2b.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla2b.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla32.001.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mtla32.001.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.007.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.007.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.008.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.008.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.009.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.009.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.010.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.010.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.011.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/材质.011.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/GameManageer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/GameManageer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/LightControler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/LightControler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/State.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/cmaramer/BasicCharamerControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/cmaramer/BasicCharamerControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/BuffState.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bugg_fixed5.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bugg_fixed5.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/bugg_fixed5.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/bugg_fixed5.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/model/buff_fixed6.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/model/buff_fixed6.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/model/buff_fixed7.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/model/buff_fixed7.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/model/buff_fixed8.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/model/buff_fixed8.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/model/bugg_fixed5.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefab/buff_blue.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefab/buff_blue.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,25 +248,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/iiap/桌面/unity_project/Learn_shader/Assets&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/iiap/桌面/unity_project/Learn_shader/Assets",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/home/iiap/.config/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
-      &quot;/home/iiap/.config/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
-      &quot;/home/iiap/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/home/iiap/.config/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/home/iiap/.config/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/home/iiap/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../build speace/test.x86_64" />

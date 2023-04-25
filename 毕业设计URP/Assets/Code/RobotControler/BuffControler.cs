@@ -39,7 +39,7 @@ public class BuffControler : RoboControler
         {    
             Transform tempchild = transform.GetChild(i);
             
-            if (tempchild.name=="buff_base")
+            if (Regex.Match(tempchild.name, @"buff_base").Success)
             {
                 buff_base = transform.GetChild(i);
             }
@@ -106,7 +106,7 @@ public class BuffControler : RoboControler
 
     }
     /// <summary>
-    /// 保证每次只有一个
+    /// 保证每次已经激活的并不会激活
     /// </summary>
     public void randam_active_normal()
     {
