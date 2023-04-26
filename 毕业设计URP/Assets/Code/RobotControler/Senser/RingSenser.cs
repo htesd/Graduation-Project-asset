@@ -2,17 +2,17 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 
-public delegate void NotifyCallback();
 public class RingSenser : MonoBehaviour
 {
-    public NotifyCallback Callback;
+    public UnityEvent OnBulletHit;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("");
+        
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class RingSenser : MonoBehaviour
         else
         {
             transform.parent.transform.GetComponent<FanControler>().active_state = 2;
-            this.Callback();
+            OnBulletHit.Invoke();
         }
         
     }

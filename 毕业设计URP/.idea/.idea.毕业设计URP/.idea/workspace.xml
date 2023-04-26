@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/RingSenser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/RingSenser.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_actived.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_actived.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/RingSenser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/RingSenser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +142,7 @@
       <workItem from="1681993226608" duration="2471000" />
       <workItem from="1682305925141" duration="2435000" />
       <workItem from="1682428636086" duration="4982000" />
-      <workItem from="1682495141874" duration="13326000" />
+      <workItem from="1682495141874" duration="15150000" />
     </task>
     <servers />
   </component>

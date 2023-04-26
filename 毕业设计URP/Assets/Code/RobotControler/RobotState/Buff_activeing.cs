@@ -117,7 +117,7 @@ namespace Code.RobotControler.RobotState
             //为每个传感器添加对应的响应函数.传入attacked函数
             foreach (FanControler fan in this.buffcontroler.bufffans)
             {
-                fan.lighbar_rings[0].GetComponent<RingSenser>().Callback = new NotifyCallback(this.buffcontroler.state.be_atacked);
+                fan.lighbar_rings[0].GetComponent<RingSenser>().OnBulletHit.AddListener(this.buffcontroler.state.be_atacked);
             }
             
             

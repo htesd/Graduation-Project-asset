@@ -61,7 +61,7 @@ public class BuffControler : RoboControler
         }
         //为每个击打区域添加传感器，逻辑思考后应该只给最大的添加碰撞器
         
-        
+        this.state.enter_state();
         
        
         
