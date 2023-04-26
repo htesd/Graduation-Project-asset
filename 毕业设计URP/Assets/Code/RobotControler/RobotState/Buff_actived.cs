@@ -5,26 +5,32 @@ namespace Code.RobotControler.RobotState
 {
     public class Buff_actived : RoboState
     {
-        public static Buff_actived buff_activing = new Buff_actived();
-        
-        public void be_atacked(BuffControler controler)
+        private RoboControler roboControler;
+        public Buff_actived(RoboControler r)
         {
-            
+            this.roboControler = r;
         }
         
-        public void On_update(BuffControler controler)
-        {
-           
-        }
+     
         
-        public void be_atacked(RoboControler controler)
+        public override void be_atacked()
         {
             throw new System.NotImplementedException();
         }
 
-        public void On_update(RoboControler controler)
+        public override void On_update()
         {
            
+        }
+        
+        public override void enter_state()
+        {
+            
+        }
+
+        public override void quite_state()
+        {
+            
         }
     }
 }

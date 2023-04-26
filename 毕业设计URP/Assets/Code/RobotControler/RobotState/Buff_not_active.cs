@@ -2,26 +2,31 @@ namespace Code.RobotControler.RobotState
 {
     public class Buff_not_active : RoboState
     {
-        public static RoboState buff_not_active = new Buff_not_active();
+        private RoboControler roboControler;
+        public Buff_not_active(RoboControler r)
+        {
+            this.roboControler = r;
+        }
         
-        public void be_atacked(BuffControler controler)
+     
+        public override void be_atacked()
+        {
+           
+        }
+
+        public override void On_update()
+        {
+           
+        }
+
+        public override void enter_state()
         {
             
         }
-        
-        public void On_update(BuffControler controler)
-        {
-           
-        }
 
-        public void be_atacked(RoboControler controler)
+        public override void quite_state()
         {
-           
-        }
-
-        public void On_update(RoboControler controler)
-        {
-           
+            
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -14,8 +15,10 @@ public class FanControler : MonoBehaviour
     public Transform lightbar_bound_up;
     public Transform lightbar_bound_down;
     public Transform lightbar_waterlam;
+    public Transform lightbar_ring1;
     public Transform water_light;
-    public bool is_active = false;
+    //0是不能激活，1是等待激活，2是已经激活
+    public int active_state = 0;
 
     public Material[] materials;
     
@@ -66,11 +69,15 @@ public class FanControler : MonoBehaviour
                 water_light = tempchild.GetComponent<Transform>();
                 continue;
             }
+            
+           
 
         }
+
+        //初始化子弹检测脚本        
+
+        this.lighbar_rings[0].AddComponent<RingSenser>();
         
-        
-        turn_lightbound_up_on();
         
         this.lightbar_target.gameObject.SetActive(false);
 
@@ -101,7 +108,7 @@ public class FanControler : MonoBehaviour
             else
             {
                 lighbar_rings[num].gameObject.GetComponent<Renderer>().material = materials[1];
-                this.is_active = true;
+                
                 return true;
             }
 
@@ -217,10 +224,44 @@ public class FanControler : MonoBehaviour
         //整合状态
         public void enter_target_mode()
         {
+            turn_all_off();
+            lightbar_target.gameObject.SetActive(true);
+            turn_lightbound_up_on();
+            turn_lighttarget_on();
+            turn_lightwatterlam_on();
+
+        }
+
+        public void enter_actived_mode()
+        {
+            turn_all_off();
+            lightbar_target.gameObject.SetActive(false);
+            turn_lightbound_up_on();
+            turn_lightbound_down_on();
+            turn_water_light_on();
+            //目前是随机亮
+            this.turn_lightring_onbynum(Random.Range(0, 10));
+        }
+
+        public void enter_unaactiveable_mode()
+        {
+            turn_all_off();
             
         }
-        
-        
+
+
+        public void turn_all_off()
+        {
+            turn_lightbound_down_up_off();
+            turn_lightbound_up_off();
+            turn_lighttarget_off();
+            turn_lightwatterlam_off();
+            turn_water_light_off();
+            for (int i = 0; i < lighbar_rings.Length; i++)
+            {
+                turn_lightring_offbynum(i);
+            }
+        }
         
         
         

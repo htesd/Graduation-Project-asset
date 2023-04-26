@@ -2,15 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Code.RobotControler;
-public interface RoboState
+public abstract class  RoboState
 {
-        public void be_atacked(RoboControler controler);
-
-        public void On_update(RoboControler controler);
-
-        public void be_atacked(BuffControler controler);
         
-        public void On_update(BuffControler controler);
+        private RoboControler roboControler;
+        public RoboState(RoboControler r)
+        {
+                this.roboControler = r;
+        }
+        public RoboState()
+        {
+                Debug.LogWarning("没有初始的控制器可能导致严重错误！");
+        }
+        
+       
+        public abstract void be_atacked();
+
+        public abstract void On_update();
+
+
+        public abstract void enter_state();
+        
+        public abstract void quite_state();
 
 
 }

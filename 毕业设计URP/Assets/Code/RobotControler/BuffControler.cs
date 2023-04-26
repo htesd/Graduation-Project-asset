@@ -10,6 +10,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using Code.util;
+ 
+ //TODO 实际上每个机器人应该都有类似的机制就是应该在身上有传感器，同时还有控制器
 public class BuffControler : RoboControler
 {
 
@@ -17,11 +19,12 @@ public class BuffControler : RoboControler
     public bool buff_rotation = false;
     public float rotationbalace = 1.0f;
     public float time_counter=0.0f;
-    int active_num = 0;
+    
     //buff rotation
     public Transform buff_base;
     public FanControler[] bufffans;
-  
+    public RoboState state;
+    
     public override void change_state(RoboState state)
     {
         this.state = state;
@@ -30,6 +33,7 @@ public class BuffControler : RoboControler
     
     void Start()
     {
+        this.state = new Buff_activeing(this);
         
         bufffans = new FanControler[5];
         int fan_bum = 0;
@@ -47,8 +51,7 @@ public class BuffControler : RoboControler
         }
 
         List<Transform> fan_transform = UtilsForGameobject.getallChildren_by_keyword(this.transform, "fan_blade");
-
-
+        
         if (fan_transform.Count == 5)
         {
             for (int i = 0; i < fan_transform.Count; i++)
@@ -56,22 +59,20 @@ public class BuffControler : RoboControler
                 this.bufffans[i] = fan_transform[i].GetComponent<FanControler>();
             }
         }
-        //初始化状态
-        change_state(Buff_activeing.buff_activing);
-        //确认激活状态
-        foreach (FanControler buff_fan in bufffans)
-        {
-            if (buff_fan.is_active==true)
-            {
-                active_num += 1;
-            }    
-        }
+        //为每个击打区域添加传感器，逻辑思考后应该只给最大的添加碰撞器
+        
+        
+        
+       
+        
+       
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.state.On_update(this);
+        this.state.On_update();
     }
     
     
@@ -100,9 +101,11 @@ public class BuffControler : RoboControler
     {
             
         int fan_num = Random.Range(0, 5);
-        int ring_num = Random.Range(0, 9);
+      
         
-        bufffans[fan_num].turn_lightring_onbynum(ring_num);
+        bufffans[fan_num].active_state=2;
+        
+        this.state.be_atacked();
 
     }
     /// <summary>
@@ -113,9 +116,8 @@ public class BuffControler : RoboControler
             
         int fan_num = Random.Range(0, 5);
         int ring_num = Random.Range(0, 9);
-  
         bufffans[fan_num].turn_lightring_onbynum(ring_num);
-
+        
     }
     
     
