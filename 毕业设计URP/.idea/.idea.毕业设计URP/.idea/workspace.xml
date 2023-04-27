@@ -7,8 +7,12 @@
     <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/FanControler.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_activeing.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/RingSenser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/RingSenser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +102,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14770">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14770" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -142,7 +146,8 @@
       <workItem from="1681993226608" duration="2471000" />
       <workItem from="1682305925141" duration="2435000" />
       <workItem from="1682428636086" duration="4982000" />
-      <workItem from="1682495141874" duration="15150000" />
+      <workItem from="1682495141874" duration="15481000" />
+      <workItem from="1682593762049" duration="7252000" />
     </task>
     <servers />
   </component>

@@ -19,6 +19,7 @@ public class BuffControler : RoboControler
     public bool buff_rotation = false;
     public float rotationbalace = 1.0f;
     public float time_counter=0.0f;
+    private int count = 0;
     
     //buff rotation
     public Transform buff_base;
@@ -60,10 +61,13 @@ public class BuffControler : RoboControler
             }
         }
         //为每个击打区域添加传感器，逻辑思考后应该只给最大的添加碰撞器
+
+        foreach (FanControler fan in bufffans)
+        {
+            fan.lighbar_rings[0].AddComponent<RingSenser>();
+        }
         
         this.state.enter_state();
-        
-       
         
        
         
@@ -93,6 +97,7 @@ public class BuffControler : RoboControler
     {
         this.time_counter = 0.0f;
         buff_rotation=false;
+        Debug.Log(this.count);
     }
 
     

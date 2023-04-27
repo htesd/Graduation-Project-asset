@@ -8,7 +8,9 @@ using UnityEngine.Events;
 
 public class RingSenser : MonoBehaviour
 {
-    public UnityEvent OnBulletHit;
+    public UnityEvent OnBulletHit=new UnityEvent();
+
+    public String name = "hahah";
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,8 @@ public class RingSenser : MonoBehaviour
             Debug.Log("无法激活！");
         }
         else
-        {
+        {   
+            Debug.Log("激活！");
             transform.parent.transform.GetComponent<FanControler>().active_state = 2;
             OnBulletHit.Invoke();
         }

@@ -20,6 +20,7 @@ namespace Code.RobotControler.RobotState
         
         public override void be_atacked()
         {
+            
             active_num = 0;
             
             //直接点亮所有被激活的
@@ -41,8 +42,29 @@ namespace Code.RobotControler.RobotState
             else
             {
                 //重置倒计时
-                this.timecounter_fortarget = 3;
+                //激活成功之后应该为0
+                this.timecounter_fortarget = 0;
+                
+                //随机选择一个状态扇叶激活
+                
+                int temp_num = Random.Range(0, buffcontroler.bufffans.Length);
+                int counter = 1;
+                while (buffcontroler.bufffans[temp_num].active_state!=0)
+                {
+                    temp_num = Random.Range(0, buffcontroler.bufffans.Length);
+                    counter++;
+                    if (counter>=buffcontroler.bufffans.Length)
+                    {
+                        Debug.LogError("算法出现错误！");
+                        break;
+                    }
+
+                }
+                buffcontroler.bufffans[temp_num].active_state = 1;
+                buffcontroler.bufffans[temp_num].enter_target_mode();
             }
+           
+            
         }
         
         public  override void On_update()
@@ -51,9 +73,9 @@ namespace Code.RobotControler.RobotState
             if (buffcontroler.buff_rotation)
             {
             //保持正常旋转，同时还要保持每次只有一个扇叶可以被激活
-                float angle = Random.value * (float)0.265 + (float)0.75;
-                float w = Random.value * (float)0.116 + (float)1.884;
-                float b = (float)2.09 - angle;
+                float angle = Random.value * 0.265f + 0.75f;
+                float w = Random.value * 0.116f + 1.884f;
+                float b = 2.09f - angle;
                 float spd = angle * math.sin(w * buffcontroler.time_counter) + b;
                 buffcontroler.time_counter += Time.deltaTime;
                 buffcontroler.buff_base.Rotate(Vector3.left * Time.deltaTime * spd / math.PI * 180 * buffcontroler.rotationbalace);
@@ -67,7 +89,7 @@ namespace Code.RobotControler.RobotState
                 
             }
             this.timecounter_fortarget += Time.deltaTime;
-            if (timecounter_fortarget>2.5)
+            if (timecounter_fortarget>5)
             {
                //取消所有装甲状态，然后新增一个状态
 
@@ -115,9 +137,9 @@ namespace Code.RobotControler.RobotState
             */
             
             //为每个传感器添加对应的响应函数.传入attacked函数
-            foreach (FanControler fan in this.buffcontroler.bufffans)
+            for (int i = 0; i < this.buffcontroler.bufffans.Length; i++)
             {
-                fan.lighbar_rings[0].GetComponent<RingSenser>().OnBulletHit.AddListener(this.buffcontroler.state.be_atacked);
+                this.buffcontroler.bufffans[i].lighbar_rings[0].GetComponent<RingSenser>().OnBulletHit.AddListener(this.buffcontroler.state.be_atacked);
             }
             
             
