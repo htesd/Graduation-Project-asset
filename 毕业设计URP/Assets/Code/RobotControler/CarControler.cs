@@ -130,10 +130,7 @@ public class CarControler : MonoBehaviour
                 }
             }
             
-     
             
-            
-          
         }
         
         

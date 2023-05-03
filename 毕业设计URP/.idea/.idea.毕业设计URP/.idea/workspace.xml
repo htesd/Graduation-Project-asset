@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FakeCameraOutOfControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FakeCameraOutOfControl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/State.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/State.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/FakeCamera.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/FakeCamera.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mono_crash.mem.6340.1.blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/CarControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/CarControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RoboControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RoboControler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +27,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1060fe86c9b140feab1d3cb928c249f17400/a2/d119c423/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4343863d51a94c669ee4b491fe8d2c073c00/6b/db63a473/WheelCollider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/0f/c0fc1705/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/d1/ca81212e/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/CGIncludes/UnityCG.cginc" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/iiap/桌面/unity_workplace/Graduation-Project-asset/毕业设计URP/Assets/Code/RobotControler/CarControler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/iiap/桌面/unity_workplace/Graduation-Project-asset/毕业设计URP/Assets/Code/RobotControler/CarControler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/iiap/桌面/unity_workplace/Graduation-Project-asset/毕业设计URP/Assets/Code/RobotControler/CarControler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/ui/UIController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -152,7 +158,9 @@
       <workItem from="1682843473323" duration="666000" />
       <workItem from="1682859686594" duration="2402000" />
       <workItem from="1682928505624" duration="7000" />
-      <workItem from="1682928603781" duration="18734000" />
+      <workItem from="1682928603781" duration="19332000" />
+      <workItem from="1683101483243" duration="1246000" />
+      <workItem from="1683103397963" duration="3863000" />
     </task>
     <servers />
   </component>
