@@ -13,14 +13,19 @@ namespace Code.RobotControler.Senser
         public CarControler car=null;
 
         public State camera_state = null;
-        //应该有两个状态，一个是没有控制车的时候，一个是已经控制车的时候
         
+        public string key_message = "";
+        //应该有两个状态，一个是没有控制车的时候，一个是已经控制车的时候
+        void OnGUI()
+        {
+            GUI.Label(new Rect(0.5f*Screen.width, 0.5f*Screen.height, 100, 20), this.key_message);
+
+        }
         private void Start()
         {
             if (this.car==null)
             {
                 this.camera_state = new FakeCameraOutOfControl(this);
-                
             }
             else
             {
@@ -28,14 +33,12 @@ namespace Code.RobotControler.Senser
             }
             
             this.camera_state.enter_state();
-            
-
         }
 
         private void Update()
         {
             
-         this.camera_state.On_update();   
+            this.camera_state.On_update();   
          
         }
         

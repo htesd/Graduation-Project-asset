@@ -26,6 +26,8 @@ public class RingSenser : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         Debug.Log(other.contacts[0].point);
+        
+        
         if (transform.parent.transform.GetComponent<FanControler>().active_state!=1)
         {
             Debug.Log("无法激活！");
@@ -33,7 +35,7 @@ public class RingSenser : MonoBehaviour
         else
         {   
             Debug.Log("激活！");
-            transform.parent.transform.GetComponent<FanControler>().active_state = 2;
+            transform.parent.transform.GetComponent<FanControler>().active_state = 3;
             OnBulletHit.Invoke();
         }
         

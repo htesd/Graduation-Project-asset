@@ -26,8 +26,9 @@ namespace Code.RobotControler.RobotState
             //直接点亮所有被激活的
             foreach (FanControler fan in this.buffcontroler.bufffans)
             {
-                if (fan.active_state==2)
+                if (fan.active_state==3)
                 {
+                    
                     fan.enter_actived_mode();
                     active_num += 1;
                 }
@@ -78,6 +79,11 @@ namespace Code.RobotControler.RobotState
                 float b = 2.09f - angle;
                 float spd = angle * math.sin(w * buffcontroler.time_counter) + b;
                 buffcontroler.time_counter += Time.deltaTime;
+                //这里有问题，理论上应该退出当前模式进入下一个模式
+                if (buffcontroler.time_counter>30)
+                {
+                    buffcontroler.time_counter = 0;
+                }
                 buffcontroler.buff_base.Rotate(Vector3.left * Time.deltaTime * spd / math.PI * 180 * buffcontroler.rotationbalace);
             }
             

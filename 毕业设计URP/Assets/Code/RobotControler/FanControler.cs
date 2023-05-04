@@ -17,7 +17,7 @@ public class FanControler : MonoBehaviour
     public Transform lightbar_waterlam;
     public Transform lightbar_ring1;
     public Transform water_light;
-    //0是不能激活，1是等待激活，2是已经激活
+    //0是不能激活，1是等待激活，2是已经激活,3 是打中但是还没激活
     public int active_state = 0;
 
     public Material[] materials;
@@ -235,6 +235,7 @@ public class FanControler : MonoBehaviour
         public void enter_actived_mode()
         {
             turn_all_off();
+            this.active_state = 2;
             Debug.Log("enter actived!");
             lightbar_target.gameObject.SetActive(false);
             lightbar_waterlam.gameObject.SetActive(false);

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Code.RobotControler;
+using Code.util;
 using UnityEngine;
 
 public class CarControler : RoboControler
@@ -22,12 +23,12 @@ public class CarControler : RoboControler
     public float sidewaysAsymptoteSlip = 0.5f;
     public float sidewaysAsymptoteValue = 0.75f;
     public float sidewayStiffness = 1f;
+    public float camera_x;
+    public float camera_y;
+    public float camera_z;
 
-
-
-    private float forwardInput;
+    
     private float rotationInput;
-    private float horizontalinput;
     private float Angle = 0.0f;
 
 
@@ -35,6 +36,7 @@ public class CarControler : RoboControler
     
     private void Start()
     {
+        //设置车辆的属性
         for (int i = 0; i < wheelColliders.Length; i++)
         {
 
@@ -69,15 +71,24 @@ public class CarControler : RoboControler
             // Debug.Log(wheelColliders[i].forwardFriction.asymptoteSlip);
             // Debug.Log(wheelColliders[i].forwardFriction.asymptoteValue);
             // Debug.Log(wheelColliders[i].forwardFriction.stiffness);
+            //初始化相机参数
+            Transform head = UtilsForGameobject.getallChildren_by_keyword(this.transform, "head")[0];
+
+            this.camera_x = head.position.x;
+            this.camera_y = head.position.y;
+            this.camera_z = head.position.z-0.1f;
+            
         }
+        
+     
         
     }
 
     //理论上来说这里被控制单位不应该有update
     void Update()
     {
-        forwardInput = Input.GetAxis("Vertical") ;
-        horizontalinput = Input.GetAxis("Horizontal");
+        
+        /*
         rotationInput = 0f;
         
 
@@ -92,8 +103,13 @@ public class CarControler : RoboControler
         {
             rotationInput -= rotationSpeed;
         }
-        
-        
+        */
+      
+    }
+
+    public void act_vertical_and_horizontal(float forwardInput,float horizontalinput)
+    {
+       
         
         for (int i = 0; i < wheelColliders.Length; i++)
         {
@@ -116,30 +132,29 @@ public class CarControler : RoboControler
             {
                 if (forwardInput>0)
                 {
-                    wheelColliders[i].motorTorque = -this.motorTorque/2*forwardInput-this.horizontalinput*this.motorTorque/2;
+                    wheelColliders[i].motorTorque = -this.motorTorque/2*forwardInput-horizontalinput*this.motorTorque/2;
                 }
                 else
                 {
                     wheelColliders[i].motorTorque = -this.motorTorque / 2 * forwardInput +
-                                                    this.horizontalinput * this.motorTorque / 2;
+                                                    horizontalinput * this.motorTorque / 2;
                 }
             }
             else
             {
                 if (forwardInput>0)
                 {
-                    wheelColliders[i].motorTorque = -this.motorTorque / 2 * forwardInput + this.horizontalinput * this.motorTorque / 2;
+                    wheelColliders[i].motorTorque = -this.motorTorque / 2 * forwardInput + horizontalinput * this.motorTorque / 2;
                 }
                 else
                 {
-                    wheelColliders[i].motorTorque = -this.motorTorque/2*forwardInput-this.horizontalinput*this.motorTorque/2;
+                    wheelColliders[i].motorTorque = -this.motorTorque/2*forwardInput-horizontalinput*this.motorTorque/2;
                 }
             }
             
             
         }
-        
-        
+
 
     }
 

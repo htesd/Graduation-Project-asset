@@ -50,5 +50,26 @@ namespace Code.util
             }
             return result;
         }
+
+
+        public static Transform get_granfather(Transform son)
+        {
+            if (son==null)
+            {
+                Debug.LogError("尝试寻找一个空物体的父亲!");
+                return son;
+            }
+                        
+            while (son.transform.parent!=null)
+            {
+                son = son.transform.parent;
+            }
+            
+            return son;
+        }
+        
     }
+    
+    
+    
 }

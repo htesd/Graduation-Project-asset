@@ -15,13 +15,16 @@ namespace Code.RobotControler.RobotState
 
         public FackCameraInControl(FakeCamera f)
         {
+            
             this.camera = f;
             
         }
 
         public override void On_update()
         {
-          
+            Vector3 position =
+                new Vector3(this.camera.car.camera_x, this.camera.car.camera_y, this.camera.car.camera_z);
+            this.camera.transform.Translate(position);
             
         }
 
