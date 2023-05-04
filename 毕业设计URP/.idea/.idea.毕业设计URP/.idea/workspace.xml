@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="006760ba-0e4b-453e-a4fa-438a550e4524" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/CameraState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/CameraState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FackCameraInControl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FackCameraInControl.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.毕业设计URP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/BuffControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/CarControler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/CarControler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FackCameraInControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FackCameraInControl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FakeCameraOutOfControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/FakeCameraOutOfControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/RoboState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/State.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/State.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/FakeCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/RobotControler/Senser/FakeCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1060fe86c9b140feab1d3cb928c249f17400/a2/d119c423/Input.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4343863d51a94c669ee4b491fe8d2c073c00/6b/db63a473/WheelCollider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/0f/c0fc1705/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8f01941b2ec49f48e468bc2df4fce91158e00/d1/ca81212e/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a755ffeed2c46fabb376eed847e63a3133000/7b/bd10b14e/Cursor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Hub/Editor/2021.3.15f1c1/Editor/Data/CGIncludes/UnityCG.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/RobotControler/RobotState/Buff_not_active.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/ui/UIController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,7 +57,23 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="独立播放器.Standalone Player">
+    <configuration name="启动 Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2021.3.15f1c1/Editor/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="独立播放器" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../build speace/test.x86_64" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../build speace" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../build speace/test.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -98,7 +106,15 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="单元测试(批处理模式)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2021.3.15f1c1/Editor/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="附加到 Unity 编辑器并运行" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -108,7 +124,7 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="附加到 Unity 编辑器" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -161,6 +177,7 @@
       <workItem from="1683101483243" duration="1246000" />
       <workItem from="1683103397963" duration="3912000" />
       <workItem from="1683130268813" duration="3409000" />
+      <workItem from="1683173140825" duration="2148000" />
     </task>
     <servers />
   </component>

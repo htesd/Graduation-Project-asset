@@ -1,10 +1,16 @@
 using Code.RobotControler.Senser;
-
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 namespace Code.RobotControler.RobotState
 {
     public class FackCameraInControl : CameraState
     {
         
+        public float  rotation_sensitivity = 3f ;
+        public float move_speed = 10.0f;
+        private float xRotation = 0.0f;
+        private float yRotation = 0.0f;
         public FakeCamera camera;
 
         public FackCameraInControl(FakeCamera f)
@@ -15,14 +21,17 @@ namespace Code.RobotControler.RobotState
 
         public override void On_update()
         {
+          
             
         }
 
         public override void enter_state()
         {
-             Cursor.lockState = CursorLockMode.Confined;
-             Cursor.lockState = CursorLockMode.Locked;
-  
+            
+            
+          
+             
+            
         }
 
         public override void quite_state()

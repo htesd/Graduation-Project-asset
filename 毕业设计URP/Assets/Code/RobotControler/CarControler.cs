@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Code.RobotControler;
 using UnityEngine;
 
-public class CarControler : MonoBehaviour
-{
+public class CarControler : RoboControler
+{   
+    
+    
     public WheelCollider[] wheelColliders;
     public Transform[] wheelMeshes;
     public float motorTorque = 1f;
@@ -28,6 +31,8 @@ public class CarControler : MonoBehaviour
     private float Angle = 0.0f;
 
 
+    private RoboState State = null;
+    
     private void Start()
     {
         for (int i = 0; i < wheelColliders.Length; i++)
@@ -50,24 +55,25 @@ public class CarControler : MonoBehaviour
 
             
             
-            Debug.Log("hahahahahaha!");
-            Debug.Log(wheelColliders[i].forwardFriction.extremumValue);
-            Debug.Log(wheelColliders[i].forwardFriction.extremumSlip);
-            Debug.Log(wheelColliders[i].forwardFriction.asymptoteSlip);
-            Debug.Log(wheelColliders[i].forwardFriction.asymptoteValue);
-            Debug.Log(wheelColliders[i].forwardFriction.stiffness);
+            // Debug.Log("hahahahahaha!");
+            // Debug.Log(wheelColliders[i].forwardFriction.extremumValue);
+            // Debug.Log(wheelColliders[i].forwardFriction.extremumSlip);
+            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteSlip);
+            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteValue);
+            // Debug.Log(wheelColliders[i].forwardFriction.stiffness);
             wheelColliders[i].forwardFriction = forwardFriction;
             wheelColliders[i].sidewaysFriction = sidewayFriction;
-            Debug.Log("hahahahahaha!");
-            Debug.Log(wheelColliders[i].forwardFriction.extremumValue);
-            Debug.Log(wheelColliders[i].forwardFriction.extremumSlip);
-            Debug.Log(wheelColliders[i].forwardFriction.asymptoteSlip);
-            Debug.Log(wheelColliders[i].forwardFriction.asymptoteValue);
-            Debug.Log(wheelColliders[i].forwardFriction.stiffness);
+            // Debug.Log("hahahahahaha!");
+            // Debug.Log(wheelColliders[i].forwardFriction.extremumValue);
+            // Debug.Log(wheelColliders[i].forwardFriction.extremumSlip);
+            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteSlip);
+            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteValue);
+            // Debug.Log(wheelColliders[i].forwardFriction.stiffness);
         }
         
     }
 
+    //理论上来说这里被控制单位不应该有update
     void Update()
     {
         forwardInput = Input.GetAxis("Vertical") ;
@@ -137,5 +143,11 @@ public class CarControler : MonoBehaviour
 
     }
 
-   
+
+    public override void change_state(RoboState state)
+    {   
+        state.quite_state();
+        this.state = state;
+        this.state.enter_state();
+    }
 }

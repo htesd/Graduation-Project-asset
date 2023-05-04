@@ -28,7 +28,9 @@ public class BuffControler : RoboControler
     
     public override void change_state(RoboState state)
     {
+        state.quite_state();
         this.state = state;
+        this.state.enter_state();
     }
     
     
