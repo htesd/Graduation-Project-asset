@@ -17,7 +17,7 @@ public abstract class  RoboState
         
        
         public abstract void be_atacked();
-
+        
         public abstract void On_update();
 
 
