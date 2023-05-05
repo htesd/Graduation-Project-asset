@@ -23,9 +23,10 @@ public class CarControler : RoboControler
     public float sidewaysAsymptoteSlip = 0.5f;
     public float sidewaysAsymptoteValue = 0.75f;
     public float sidewayStiffness = 1f;
-    public float camera_x;
-    public float camera_y;
-    public float camera_z;
+    public float camera_x=0;
+    public float camera_y=0;
+    public float camera_z=-0.1f;
+    public Vector3 head_position;
 
     
     private float rotationInput;
@@ -74,10 +75,9 @@ public class CarControler : RoboControler
             //初始化相机参数
             Transform head = UtilsForGameobject.getallChildren_by_keyword(this.transform, "head")[0];
 
-            this.camera_x = head.position.x;
-            this.camera_y = head.position.y;
-            this.camera_z = head.position.z-0.1f;
-            
+            this.head_position = head.transform.position;
+
+
         }
         
      
