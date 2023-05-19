@@ -68,6 +68,18 @@ namespace Code.util
             return son;
         }
         
+        
+        public static Quaternion GetLocalRotation(Transform transform, Vector3 relativeEulerAngles) {
+            // 将相对旋转欧拉角转换为局部四元数
+            Quaternion localRotation = Quaternion.Euler(relativeEulerAngles);
+
+            // 将局部四元数与物体的世界旋转相乘，得到最终的旋转
+            Quaternion finalRotation = transform.rotation * localRotation;
+
+            // 返回最终的旋转
+            return finalRotation;
+        }
+        
     }
     
     

@@ -39,6 +39,7 @@ namespace Code.RobotControler.Senser
         {
             
             this.camera_state.On_update();   
+            
          
         }
         

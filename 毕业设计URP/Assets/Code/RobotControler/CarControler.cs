@@ -25,8 +25,18 @@ public class CarControler : RoboControler
     public float sidewayStiffness = 1f;
     public float camera_x=0;
     public float camera_y=0;
-    public float camera_z=-0.1f;
-    public Vector3 head_position;
+    public float camera_z = -0.1f;
+    public float rotaion_sensitivity = 1.0f;
+    private float xRotation = 0.0f;
+    private float yRotation = 0.0f;
+    private float steerAngle_temp = 0.0f;
+    
+    
+
+    public Transform head;
+    public Transform neck;
+    public Transform chassis;
+    
 
     
     private float rotationInput;
@@ -55,28 +65,14 @@ public class CarControler : RoboControler
             sidewayFriction.asymptoteSlip=this.sidewaysAsymptoteSlip;
             sidewayFriction.asymptoteValue=this.sidewaysAsymptoteValue;
             sidewayFriction.stiffness=this.sidewayStiffness;
-
             
-            
-            // Debug.Log("hahahahahaha!");
-            // Debug.Log(wheelColliders[i].forwardFriction.extremumValue);
-            // Debug.Log(wheelColliders[i].forwardFriction.extremumSlip);
-            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteSlip);
-            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteValue);
-            // Debug.Log(wheelColliders[i].forwardFriction.stiffness);
             wheelColliders[i].forwardFriction = forwardFriction;
             wheelColliders[i].sidewaysFriction = sidewayFriction;
-            // Debug.Log("hahahahahaha!");
-            // Debug.Log(wheelColliders[i].forwardFriction.extremumValue);
-            // Debug.Log(wheelColliders[i].forwardFriction.extremumSlip);
-            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteSlip);
-            // Debug.Log(wheelColliders[i].forwardFriction.asymptoteValue);
-            // Debug.Log(wheelColliders[i].forwardFriction.stiffness);
-            //初始化相机参数
-            Transform head = UtilsForGameobject.getallChildren_by_keyword(this.transform, "head")[0];
-
-            this.head_position = head.transform.position;
-
+          
+            head = UtilsForGameobject.getallChildren_by_keyword(this.transform, "head")[0];
+            neck = UtilsForGameobject.getallChildren_by_keyword(this.transform, "neck")[0];
+            chassis = UtilsForGameobject.getallChildren_by_keyword(this.transform, "fuck")[0];
+            
 
         }
         
@@ -107,26 +103,51 @@ public class CarControler : RoboControler
       
     }
 
+    public Vector3  get_head_position()
+    {
+        return head.transform.position;
+    }
+
     public void act_vertical_and_horizontal(float forwardInput,float horizontalinput)
     {
        
         
+        //还在有一些小问题，但是已经不重要了
+        
         for (int i = 0; i < wheelColliders.Length; i++)
         {
-
+            
+            
             if (forwardInput>0)
             {
-                wheelColliders[i].steerAngle = Mathf.Rad2Deg*Mathf.Asin(horizontalinput/Mathf.Sqrt((Mathf.Pow(forwardInput,2)+Mathf.Pow(horizontalinput,2))));
-
+                //现在角度有问题
+                wheelColliders[i].steerAngle =this.head.localRotation.eulerAngles.y+Mathf.Rad2Deg*Mathf.Asin(horizontalinput/Mathf.Sqrt((Mathf.Pow(forwardInput,2)+Mathf.Pow(horizontalinput,2))));
+                this.steerAngle_temp = wheelColliders[i].steerAngle;
+                
             }
             else
             {
-                wheelColliders[i].steerAngle = -Mathf.Rad2Deg*Mathf.Asin(horizontalinput/Mathf.Sqrt((Mathf.Pow(forwardInput,2)+Mathf.Pow(horizontalinput,2))));
-
+                if (forwardInput==0 && horizontalinput==0)
+                {
+                    Debug.Log("gaga!");
+                    wheelColliders[i].steerAngle= this.steerAngle_temp;
+                   //一段时间不控制之后回正
+                   
+                }
+                else
+                {
+                    Debug.Log("ttttt");
+                    wheelColliders[i].steerAngle =+ this.head.localRotation.eulerAngles.y -Mathf.Rad2Deg*Mathf.Asin(horizontalinput/Mathf.Sqrt((Mathf.Pow(forwardInput,2)+Mathf.Pow(horizontalinput,2))));
+                    this.steerAngle_temp = wheelColliders[i].steerAngle;
+                }
+                
+              
             }
+            /*Debug.Log("steer angle"+ wheelColliders[i].steerAngle);
+            Debug.Log(this.steerAngle_temp);
+            Debug.Log("head"+this.head.localRotation.eulerAngles);*/
 
-            Debug.Log(horizontalinput);
-            Debug.Log(forwardInput);
+           
 
             if (horizontalinput>0)
             {
@@ -154,9 +175,108 @@ public class CarControler : RoboControler
             
             
         }
+        
+       
+
+
 
 
     }
+    
+      public void act_vertical_and_horizontal_auto(float forwardInput,float horizontalinput)
+    {
+       
+        
+        //还在有一些小问题，但是已经不重要了
+        
+        for (int i = 0; i < wheelColliders.Length; i++)
+        {
+            
+            
+            if (forwardInput>0)
+            {
+                //现在角度有问题
+                wheelColliders[i].steerAngle =this.head.localRotation.eulerAngles.y+Mathf.Rad2Deg*Mathf.Asin(horizontalinput/Mathf.Sqrt((Mathf.Pow(forwardInput,2)+Mathf.Pow(horizontalinput,2))));
+                this.steerAngle_temp = wheelColliders[i].steerAngle;
+                
+            }
+            else
+            {
+                if (forwardInput==0 && horizontalinput==0)
+                {
+                    Debug.Log("gaga!");
+                    wheelColliders[i].steerAngle= this.steerAngle_temp;
+                   //一段时间不控制之后回正
+                   
+                }
+                else
+                {
+                    Debug.Log("ttttt");
+                    wheelColliders[i].steerAngle =+ this.head.localRotation.eulerAngles.y -Mathf.Rad2Deg*Mathf.Asin(horizontalinput/Mathf.Sqrt((Mathf.Pow(forwardInput,2)+Mathf.Pow(horizontalinput,2))));
+                    this.steerAngle_temp = wheelColliders[i].steerAngle;
+                }
+                
+              
+            }
+            Debug.Log("steer angle"+ wheelColliders[i].steerAngle);
+            Debug.Log(this.steerAngle_temp);
+            Debug.Log("head"+this.head.localRotation.eulerAngles);
+
+           
+
+            if (horizontalinput>0)
+            {
+                if (forwardInput>0)
+                {
+                    wheelColliders[i].motorTorque = -this.motorTorque/2*forwardInput-horizontalinput*this.motorTorque/2;
+                }
+                else
+                {
+                    wheelColliders[i].motorTorque = -this.motorTorque / 2 * forwardInput +
+                                                    horizontalinput * this.motorTorque / 2;
+                }
+            }
+            else
+            {
+                if (forwardInput>0)
+                {
+                    wheelColliders[i].motorTorque = -this.motorTorque / 2 * forwardInput + horizontalinput * this.motorTorque / 2;
+                }
+                else
+                {
+                    wheelColliders[i].motorTorque = -this.motorTorque/2*forwardInput-horizontalinput*this.motorTorque/2;
+                }
+            }
+            
+            
+        }
+        
+        
+
+
+    }
+
+
+    public void act_mousex_mousey(float mouse_x, float mouse_y)
+    {
+        
+        xRotation += mouse_x*this.rotaion_sensitivity ;
+        yRotation += mouse_y * this.rotaion_sensitivity;
+        //欧拉角转化为四元数
+        Quaternion rotation_head = Quaternion.Euler(yRotation, xRotation, 0);
+        Quaternion rotation_neck = Quaternion.Euler(-90, xRotation, 0);
+        
+        Quaternion rotation_chassis = Quaternion.Euler(0, xRotation, 0);
+        
+        this.head.localRotation = rotation_head;
+        this.neck.localRotation = rotation_neck;
+        chassis.localRotation = rotation_chassis;
+        
+
+
+    }
+    
+    
 
 
     public override void change_state(RoboState state)
