@@ -20,10 +20,8 @@ public abstract class  RoboState
         
         public abstract void On_update();
 
-
         public abstract void enter_state();
         
         public abstract void quite_state();
-
-
+        
 }

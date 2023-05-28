@@ -13,7 +13,7 @@ using UnityEngine.Rendering;
  */
 public class GameManageer : MonoBehaviour
 {
-    public int port = 5557; // ZeroMQ端口号
+    public int port = 5558; // ZeroMQ端口号
     public int width = 1440; // 图像宽度
     public int height = 1080; // 图像高度
             
@@ -34,14 +34,9 @@ public class GameManageer : MonoBehaviour
         //设置屏幕大小：
         Screen.SetResolution(width, height, false);
 
-        
-        // 创建RenderTexture和Texture2D对象
-        //tex = new Texture2D(width, height, TextureFormat.RGB24, false);
-        
         // 创建ZeroMQ的PUSH套接字
         PushSocket pushSocket = new PushSocket();
         pushSocket.Bind($"tcp://*:{port}");
-
         // 开始协程，循环发送图像数据
         StartCoroutine(SendImage(pushSocket));
     }
@@ -63,6 +58,7 @@ public class GameManageer : MonoBehaviour
         // 将读取到的数据保存到结果纹理中
         resultTexture.LoadRawTextureData(request.GetData<uint>());
         resultTexture.Apply();
+        
 
         // 在此处可以将结果纹理传递给C++程序进行分析
         // ...

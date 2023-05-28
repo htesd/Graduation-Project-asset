@@ -17,6 +17,7 @@ namespace Code.util
                 Transform temp = q.Dequeue();
                
                 result.Add(temp);
+               
                 Debug.Log(temp.name);
                 
                 for (int i = 0; i < temp.childCount; i++)
